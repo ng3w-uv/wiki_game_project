@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+ 
+{% block content %}
+ <h1>{% block title %} Welcome to WikiGame {% endblock %}</h1>
+ <form method="POST">>
+  <label>Enter the Start URL</label>
+  <input type="text" name="start">
+  <br><br>
+  <label>Enter the Target URL</label>
+  <input type="text" name="target">
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+<body>
+  <h1>My List</h1>
+  <ol>
+  {%for result in list_ladder%}
+    <li>{{result}}</li>
+  {% endfor %}
+  </ol>
+</body>
+  {% endblock %}
