@@ -1,5 +1,4 @@
 const Main = require('./main.js');
-const axios = require('axios');
 
 describe('Wikipedia fetching check', () => {
     test('successful GET request to a Wikipedia page', async () => {
